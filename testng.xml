@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="automation" parallel="tests" verbose="10" thread-count="5" >
+
+    <!-- Chrome Driver update link: https://sites.google.com/a/chromium.org/chromedriver/downloads -->
+
+    <test name="SendMsgTest">
+        <packages>
+            <package name="test.testcases.impl.*" />
+        </packages>
+    </test>
+    <!--
+    <test name="chrome_test">
+        <parameter name="browser" value="chrome"/>
+      <classes>
+        <class name="com.pltc.selenium.runner.Main"/>
+      </classes>
+    </test>
+     -->
+    <!--test name="iexplore_test">
+        <parameter name="browser" value="internet explore"/>
+      <classes>
+        <class name="com.lanecrawford.tms.automation.Main"/>
+      </classes>
+    </test-->
+</suite>
